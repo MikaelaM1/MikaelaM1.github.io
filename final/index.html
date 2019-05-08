@@ -1,4 +1,4 @@
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,12 +7,52 @@
   box-sizing: border-box;
 }
 
-/* Create two equal columns that floats next to each other */
+body {
+  max-width:900px;
+margin:auto;
+}
+
+.center {
+  text-align:center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+  
+/* Create two unequal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  
+}
+
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 70%;
 }
 
 /* Clear floats after the columns */
@@ -21,39 +61,52 @@
   display: table;
   clear: both;
 }
-
-.left {
-  float: left;
-  width: 30%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-
-.right {
-  float: left;
-  width: 70%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
 </style>
 </head>
 <body>
 
-<h2>Empor1um Pies</h2>
+<header>
+
+<h2>Emprium Pies</h2>
+
+</header>
+
+<nav>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</nav>
+
+<section>
+
+
 
 <div class="row">
-  <div class="left" style="background-color:#aaa;">
-    <h2>Welcome</h2>
-    <p>Link 1</p>
+  <div class="column left" style="background-color:#aaa;">
+    <h2>Welcome to our shop</h2>
+    <p>Some text..</p>
   </div>
-  <div class="right" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <p>Pictures of pies go here</p>
+  <div class="column right" style="background-color:#bbb;">
+    <h2>Tasty Pies for busy people</h2>
+    <img src="https://live.staticflickr.com/6100/6391609219_455e252510_b.jpg" width="100%">
+
+    <p>Some text..</p>
   </div>
 </div>
 
+
+</section>
+
 <footer>
-<p>Copyright 2019 M.medlock>
-</html>
+
+<p class="center">&copy;2019 Mikaela Medlock</p>
+
 </footer>
+
+
+</body>
+</html>
